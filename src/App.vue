@@ -2,11 +2,13 @@
 import header_ from './components/header.vue'
 import home from './components/home.vue'
 import products from './components/products.vue'
+import blog from './components/blog.vue'
 </script>
 
 <template>
   <header_/>
   <home/>
   <products/>
+  <blog/>
 </template>
 
