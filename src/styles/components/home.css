@@ -1,0 +1,90 @@
+.landing__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.landing__col1 {
+    width: 30%;
+}
+
+.landing__h1 {
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 118.92%;
+}
+
+.landing__p {
+    color: #545454;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 118.92%;
+}
+
+.landing__btn1 {
+    font-family: 'Poppins';
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    background:var( --clr-2);
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    transition: all .3s;
+}
+
+.landing__btn1:hover {
+    background-color: var(--clr-1);
+}
+
+.landing__img {}
+
+.landing__img-animation {
+    /* background: #FFCE411A;
+    border-radius: 50%;
+    height: auto;
+    width: auto; */
+}
+
+.landing__btn2 {
+    position: relative;
+    top: -2rem;
+    left: 48%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-style: none;
+    background-color: var( --clr-1);
+    color: white;
+    transition: all .3s;
+}
+.landing__btn2:hover{
+    background-color: var( --clr-2);
+
+}
+
+@media screen and (max-width: 992px) {
+  .landing__container{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .landing__col1{
+    width: 100%;
+  }
+  .landing__btn2 {
+    left: 46%;
+   
+}
+}
+
+@media screen and (max-width: 600px) {
+    .landing__btn2 {
+        left: 45%;
+       
+    }
+}
