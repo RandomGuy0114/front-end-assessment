@@ -1,0 +1,27 @@
+:root {
+  --clr-1: #7BC144;
+  --clr-2: #3966D8;
+  --clr-2-slate: #e8ecfc;
+  --clr-3: #000000
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  color: var(--clr-3);
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-3);
+}
