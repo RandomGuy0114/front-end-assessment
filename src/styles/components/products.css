@@ -225,6 +225,18 @@ background-color: var(--clr-2);
 color: white;
 }
 
+.products__row7{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    text-align: center;
+    margin: 3rem;
+}
+.products__row7-h1{
+    color: var(--clr-1);
+}
+
+
 @media screen and (max-width: 992px) {
 
     .products__row3 {
@@ -232,6 +244,7 @@ color: white;
         gap: 2rem;
         margin-top: 5rem;
     }
+    
 
     .products__row3-rows {
         margin: 0 3rem;
@@ -270,6 +283,11 @@ color: white;
         justify-content: center;
        
     }
+    
+.products__row7{
+   flex-wrap: wrap;
+   gap: 5rem;
+}
 }
 
 @media screen and (max-width: 600px) {

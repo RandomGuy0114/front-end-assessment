@@ -283,6 +283,24 @@
           </div>
         </div>
       </div>
+      <div class="products__row7">
+        <div class="product__row7-wrapper">
+          <h1 class="products__row7-h1">1,200</h1>
+          <p class="products__row7-p">Learning Materials Donated </p>
+        </div>
+        <div class="product__row7-wrapper">
+          <h1 class="products__row7-h1">5,500</h1>
+          <p class="products__row7-p">LMS Users</p>
+        </div>
+        <div class="product__row7-wrapper">
+          <h1 class="products__row7-h1">3000</h1>
+          <p class="products__row7-p">Trained Professionals</p>
+        </div>
+        <div class="product__row7-wrapper">
+          <h1 class="products__row7-h1">000</h1>
+          <p class="products__row7-p">Lorem Ipsum</p>
+        </div>
+      </div>
     </div>
   </section>
 </template>
