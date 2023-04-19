@@ -8,6 +8,12 @@
     color: white;
     position: relative;
 }
+.contacts__logo{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
 
 .contacts__h1 {
     font-weight: 700;
