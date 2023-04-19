@@ -31,33 +31,249 @@
     padding: 0;
     color: #222222;
 }
-.produtcs__row2-h1{
+
+.produtcs__row2-h1 {
     margin: 0;
 }
-.products__row3{
+
+.products__row3 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%;
     margin-top: 10rem;
 }
-.products__row3-rows{
+
+.products__row3-rows {
     text-align: center;
-    margin: 0 5rem;;
+    margin: 0 5rem;
+    ;
+}
+
+.products__row4 {
+    background-color: var(--clr-2);
+    color: white;
+    padding: 3rem;
+    width: 60%;
+    display: flex;
+    border-radius: 1rem;
+    position: relative;
+    height: 22.9375rem;
+
+}
+
+.products__row4-h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+
+}
+
+.products__row4-h1-2 {
+    margin-top: .8rem;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.products__row4-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.products__row4-h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 163.42%;
+    margin-bottom: .5rem;
+}
+
+.products__row4-p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170.23%;
+    margin: 0;
+}
+
+.product__row4-img {
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}
+
+.product__row4-row3 {
+    padding-top: 15%;
+}
+
+.product__row4-btn {
+    height: 3rem;
+    width: 3rem;
+    background-color: #a3b1eb;
+    ;
+    margin: auto 0;
+    border-radius: 50%;
+    border-style: none;
+    opacity: .4;
+    color: rgb(252, 252, 252);
+    transition: all .3s;
+}
+
+.product__row4-btn:hover {
+    opacity: .9;
+
+}
+
+.products__row5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+
+}
+
+.products__row5-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.products__row5-img {
+    width: 30rem;
+}
+
+.products__row5-p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 186.5%;
+    /* or 37px */
+
+    letter-spacing: 0.02em;
+
+    color: #545454;
+}
+
+.products__row5-link {
+    color: var(--clr-2);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 186.5%;
+    transition: all .3s;
+}
+
+.products__row5-link:hover {
+    color: var(--clr-1);
+    font-size: 2rem;
+}
+
+.products__row6 {
+    display: flex;
+    width: 60%;
+    background: rgba(68, 116, 255, 0.08);
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    gap: 10rem;
+    height:490px;
+    margin-bottom: 2rem;
+}
+
+.products__row6-row1 {
+    width: 50%;
+    
+}
+
+.products__row6-btn {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 183.85%;
+    width: 276px;
+    height: 68px;
+    left: 47px;
+    top: 393px;
+    color: white;
+    background: #3966D8;
+    margin-top: 5rem;
+    transition: all .3s;
+}
+.products__row6-btn:hover{
+    background-color: var(--clr-1);
+}
+
+.products__row6-row2 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2;
+    width: 60%;
+    max-height: 500px; 
+    overflow-x: auto;
+}
+
+.products__card {
+    width: 165px;
+    height: 157px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 22px;
+    padding: 3rem 1rem 0rem 1rem;
+    margin: 1rem;
+    transition: all .3s;
+}
+.products__card:hover{
+background-color: var(--clr-2);
+color: white;
 }
 
 @media screen and (max-width: 992px) {
-    .products__row3{
+
+    .products__row3 {
         flex-direction: column;
         gap: 2rem;
         margin-top: 5rem;
     }
-    .products__row3-rows{
-        margin: 0 3rem;;
+
+    .products__row3-rows {
+        margin: 0 3rem;
+        
     }
-    
-  }
-  
-  @media screen and (max-width: 600px) {
-      
-  }
+    .products__row4{
+        height: auto;
+        width: 70%;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 5rem;
+    }
+    .product__row4-row3{
+        padding: unset;
+        padding-left: 80%;
+    }
+    .products__row5-wrapper{
+        flex-wrap: wrap;
+    }
+    .products__row5-wrapper1{
+        flex-wrap: wrap-reverse;
+    }
+    .products__row6{
+        flex-direction: column;
+        gap: unset;
+        height: 50%;
+    }
+    .products__row6-row1{
+        width: 100%;
+    }
+    .products__row6-btn{
+        margin: 2rem 0;
+    }
+    .products__row6-row2{
+        width: 100%;
+        justify-content: center;
+       
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .product__row4-img{
+    width: 68vw;
+   }
+}

@@ -79,7 +79,7 @@ export default {
       links: [
         { id: "home", title: "Home", link: "#home" },
         { id: "about-us", title: "About us", link: "#about-us" },
-        { id: "products", title: "Products", link: "" },
+        { id: "products", title: "Products", link: "#products" },
         { id: "blogs", title: "Blogs", link: "#blogs" },
         { id: "contact", title: "Contact", link: "#contact" },
         { id: "book-a-demo", title: "BOOK A DEMO", link: "#book-a-demo" },
