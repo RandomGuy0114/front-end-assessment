@@ -1,5 +1,5 @@
-<template>
-  <section>
+<template >
+  <section >
     <div class="blogs__container">
       <div class="blogs__row1">
         <h1  class="blogs__h1">They Said It First</h1>
