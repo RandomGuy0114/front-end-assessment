@@ -5,6 +5,7 @@ import products from './components/products.vue'
 import blog from './components/blog.vue'
 import partners from './components/partners.vue'
 import contacts from './components/contacts.vue'
+import footer_ from './components/footer.vue'
 </script>
 
 <template>
@@ -14,5 +15,6 @@ import contacts from './components/contacts.vue'
   <blog/>
   <partners/>
   <contacts/>
+  <footer_/>
 </template>
 
