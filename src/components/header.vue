@@ -102,6 +102,7 @@ export default {
   methods: {
     toggleNav() {
       this.navOpen = !this.navOpen;
+      
     },
     handleScroll() {
       if (window.pageYOffset >= 10) {

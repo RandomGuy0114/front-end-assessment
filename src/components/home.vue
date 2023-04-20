@@ -1,5 +1,5 @@
 <template>
-  <main class="landing__container">
+  <main class="landing__container" id="home">
     <div class="landing__col1">
       <h1 class="landing__h1">The LMS that's built for your needs</h1>
       <p class="landing__p">
