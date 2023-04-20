@@ -27,9 +27,10 @@
     <ul
       :class="[
         'header__row2',
-        { 'is-active': navOpen },
+        { 'header__is-active': navOpen },
         { 'header__row2-fixed': stickyHeader },
       ]"
+      
     >
       <li>
         <span>
@@ -51,7 +52,7 @@
         >
       </li>
     </ul>
-    <div :class="['header-sm__screen', { 'is-active': navOpen }]">
+    <div :class="['header-sm__screen', { 'header__is-active': navOpen }, { 'header__row2-fixed': stickyHeader }]">
       <span class="sm__screen-logo">
         <a :href="links[0].id">
           <img src="/src/assets/logo.png" alt="" />
@@ -60,7 +61,7 @@
       <button
         aria-labal="mobile nav button"
         @click="toggleNav"
-        :class="['header__bars', { 'is-active': navOpen }]"
+        :class="['header__bars', { 'header__is-active': navOpen }]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .header__row1-arrow {
@@ -39,7 +40,8 @@
     background-color: white;
     transition: all .3s;
 }
-.header__row2-fixed{
+
+.header__row2-fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -93,14 +95,17 @@
 
     }
 
-    .header__row2.is-active {
+    .header__row2.header__is-active {
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
         transition: all .3s;
         height: 100%;
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         z-index: 999;
     }
 
@@ -111,7 +116,7 @@
         gap: 50%;
     }
 
-    .header-sm__screen.is-active {
+    .header-sm__screen.header__is-active {
         display: none;
     }
 
