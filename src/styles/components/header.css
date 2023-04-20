@@ -13,15 +13,22 @@
 
 .header__row1 {
     text-align: center;
+    padding: 0;
     color: var(--clr-2);
     background-color: var(--clr-2-slate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__row1-arrow {
-    display: inline-block;
-    margin: 0;
+    margin-top: 1.3rem;
     width: 1.5rem;
-    height: 1rem;
+    transition: all .3s;
+}
+
+.header__row1-arrow:hover {
+    color: var(--clr-1);
 }
 
 .header__row2 {
@@ -29,12 +36,32 @@
     justify-content: space-around;
     align-items: center;
     margin: 0;
+    background-color: white;
+    transition: all .3s;
+}
+.header__row2-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    transition: all .3s;
 }
 
 .header__row2-btn {
     background-color: var(--clr-1);
     padding: 1rem;
-    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
 
 }
 
@@ -48,11 +75,11 @@
     padding: 1rem;
 }
 
-.header__bars{
+.header__bars {
     display: none;
 }
 
-.sm__screen-logo{
+.sm__screen-logo {
     display: none;
 }
 
@@ -60,10 +87,12 @@
     .header__row1 {
         font-size: .8rem;
     }
-    .header__row2{
+
+    .header__row2 {
         display: none;
-    
+
     }
+
     .header__row2.is-active {
         margin: 0;
         display: flex;
@@ -73,18 +102,20 @@
         height: 100%;
         position: relative;
         z-index: 999;
-      }
-     
-      .header-sm__screen{
+    }
+
+    .header-sm__screen {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 50%;
-      }
-      .header-sm__screen.is-active{
+    }
+
+    .header-sm__screen.is-active {
         display: none;
-      }
-    .header__bars{
+    }
+
+    .header__bars {
         /* color: var(--clr-3);
         background-color: var(--clr-2); */
         width: 3rem;
@@ -92,10 +123,11 @@
         display: block;
         border: none;
     }
-    .sm__screen-logo{
+
+    .sm__screen-logo {
         display: unset;
     }
-  
+
 }
 
 @media screen and (max-width: 600px) {

@@ -2,8 +2,11 @@
   <nav class="header__container">
     <!-- header 1 -->
     <div class="header__row1 .container">
-      Covid 19 Response: No one should be left behind.Check out our different
-      ways of helping schools and institutions during the pandemic
+      <p class="header__row1-p">
+        Covid 19 Response: No one should be left behind.Check out our different
+        ways of helping schools and institutions during the pandemic
+      </p>
+
       <p class="header__row1-arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +24,13 @@
       </p>
     </div>
     <!-- header 2 -->
-    <ul  :class="['header__row2', { 'is-active': navOpen }]">
+    <ul
+      :class="[
+        'header__row2',
+        { 'is-active': navOpen },
+        { 'header__row2-fixed': stickyHeader },
+      ]"
+    >
       <li>
         <span>
           <a :href="links[0].id">
@@ -36,7 +45,6 @@
           :class="[
             { 'header__row2-btn': link.title === 'BOOK A DEMO' },
             'header__row2-link',
-            
           ]"
         >
           {{ link.title }}</a
@@ -75,7 +83,8 @@ export default {
   data() {
     return {
       navOpen: false,
-      activePage:false,
+      activePage: false,
+      stickyHeader: false,
       links: [
         { id: "home", title: "Home", link: "#home" },
         { id: "about-us", title: "About us", link: "#about-us" },
@@ -86,10 +95,24 @@ export default {
       ],
     };
   },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
   methods: {
     toggleNav() {
       this.navOpen = !this.navOpen;
     },
+    handleScroll() {
+      if (window.pageYOffset >= 10) {
+        this.stickyHeader = true;
+      } else {
+        this.stickyHeader = false;
+      }
+    },
+  },
+  // destroying the sroll event to prevent error
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>
